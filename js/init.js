@@ -226,7 +226,7 @@
 				if(name === ''|| email === ''|| message === '' || emailto === '' || phone === ''){
 					$('.empty_notice').slideDown(500).delay(2000).slideUp(500);
 				}
-				else{
+				else{ 
 					$.post(
 						"modal/contact.php",
 						{
@@ -235,7 +235,7 @@
 							ajax_emailto: 	emailto,
 							ajax_message: 	message,
 							ajax_phone: 	phone
-						}, function(data) {
+						}, function(data) { 
 							spanSuccess.append(data);
 							if(spanSuccess.find(".contact_error").length){
 								spanSuccess.slideDown(500).delay(2000).slideUp(500);		
