@@ -36,6 +36,29 @@
 /*------------------------------------------------------------------*/
 /*	01) Base
 /*------------------------------------------------------------------*/
+
+
+h1, 
+h2,  
+h3{
+ transition: 0.8s;
+ transform:translateY(20px) ;
+ opacity: 0;
+} 
+
+h1[data-scroll="in"],
+ h2[data-scroll="in"], 
+ h3[data-scroll="in"]{
+    transform: translateY(0);
+    transition-delay: 0.2s; 
+    opacity: 1;
+}
+/* Scroll in animation element selectors end */
+
+
+
+
+
 :root{
     --mc: #987750;
 	--tc: #888;
@@ -1761,6 +1784,9 @@ a:focus {
 	margin-bottom: 58px;
 	font-weight: 400;
 	max-width: 300px;
+}
+.resumo_fn_contact_info img{
+	margin-top: 58px;
 }
 .resumo_fn_contact_info h3 a{
 	text-decoration: none;
